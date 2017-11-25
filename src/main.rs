@@ -1,33 +1,3 @@
-/*use std::fs::File;
-use std::io::{BufReader, Read};
-//use std::io::Write;
-use std::path::Path;
-
-fn main() {
-    //Path to new/current file.
-    let path = Path::new("C:/Users/Chi/Desktop/loremipsum.txt");
-    open_file(&path);
-
-    let utf_8 = [239, 187, 191, 49, 13, 10, 13, 10, 50];
-    let ansi = [49, 13, 10, 13, 10, 50];
-}
-
-/*//Write-only: Writes user input into the file.
-fn save_file(path: &Path, input: &String) {
-    let mut f = File::create(&path).expect("Unable to create file");
-    f.write_all(&input.as_bytes())
-        .expect("Unable to write data");
-}*/
-
-//Read-only: Prints the content of the file to the terminal.
-fn open_file(path: &Path) {
-    let f = File::open(&path).expect("Unable to open file");
-    let mut br = BufReader::new(f);
-    let mut text = String::new();
-    br.read_to_string(&mut text).expect("Unable to read string");
-    println!("{:?}", text.as_bytes());
-}*/
-
 #![windows_subsystem = "windows"]
 extern crate kernel32;
 extern crate user32;
